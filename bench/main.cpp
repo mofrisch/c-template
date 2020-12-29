@@ -5,13 +5,13 @@
 #include "../src/armstrong_numbers.h"
 
 static void BM_isa(benchmark::State &state) {
-    for (auto _ : state)
-        bool b = is_armstrong_number(9926315);
+  for (auto _ : state)
+    bool b = is_armstrong_number(9926315);
 }
 
 static void BM_isaold(benchmark::State &state) {
-    for (auto _ : state)
-        bool b = is_armstrong_number_old(9926315);
+  for (auto _ : state)
+    bool b = is_armstrong_number_old(9926315);
 }
 
 BENCHMARK(BM_isaold);
