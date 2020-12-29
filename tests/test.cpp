@@ -1,4 +1,4 @@
+#include "../src/armstrong_numbers.h"
 #include "gtest/gtest.h"
 
-TEST(Foo, Sum) { EXPECT_EQ(2, 1 + 1); }
-
+TEST(Armstrong, 6) { EXPECT_TRUE(is_armstrong_number(6)); }
